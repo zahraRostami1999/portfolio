@@ -12,10 +12,16 @@ export default {
           sm: "2rem",
           md: "2rem",
           lg: "3rem",
-          xl: "3rem",
+          xl: "1rem",
         },
       },
     },
+    screens: {
+      sm: "450px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+    }
   },
   plugins: [],
 }
