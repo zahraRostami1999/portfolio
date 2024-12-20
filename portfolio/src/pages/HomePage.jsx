@@ -1,11 +1,11 @@
-import banner from "../assets/girl banner.png";
+import banner from "../assets/banner.png";
 import HomeIntroduction from "../components/HomeIntroduction";
 
 const HomePage = () => {
     return (
         <>
             <div className="w-full my-10 min-h-screen">
-                <div className="container">
+                <div className="px-8">
                     <div className="flex w-full justify-between">
                         <div className="w-1/2">
                             <HomeIntroduction />
