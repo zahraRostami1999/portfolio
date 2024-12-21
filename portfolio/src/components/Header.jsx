@@ -1,6 +1,6 @@
 import NavBar from "./NavBar";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { useState } from "react";
 import BurgerBar from "./BurgerBar";
 import { Link } from "react-router-dom";

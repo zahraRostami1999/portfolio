@@ -1,15 +1,17 @@
-import LinkedIn from '../assets/LinkedIn.png';
-import Telegram from '../assets/telegram.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const SocialBtn = () => {
     return (
         <>
             <div className="w-1/6 h-full flex justify-between gap-6">
-                <button className=" bg-white border border-black rounded">
-                    <img src={LinkedIn} className='w-10 h-10' />
+                <button className=" bg-white rounded">
+                    {/* <FontAwesomeIcon icon={faGithub} /> */}
                 </button>
-                <button className="border border-black rounded bg-black">
-                    <img src={Telegram} className='w-10 h-10 rounded' />
+                <button className="rounded bg-black">
+                    {/* <FontAwesomeIcon icon={faGithub} /> */}
+                </button>
+                <button className="rounded bg-black">
+                    {/* <FontAwesomeIcon icon={faGithub} /> */}
                 </button>
             </div>
         </>
