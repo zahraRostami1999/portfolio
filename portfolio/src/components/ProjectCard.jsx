@@ -1,4 +1,4 @@
-import banner from "../assets/girl banner.png";
+import banner from "../assets/banner.png";
 
 const ProjectCard = () => {
     return (
