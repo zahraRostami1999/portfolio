@@ -3,16 +3,16 @@ import SocialBtn from "../components/SocialBtn";
 const HomeIntroduction = () => {
     return (
         <>
-            <div className="w-full h-full flex flex-wrap justify-start items-center">
-                <div className="text-5xl">
-                    <div>Hello I'm <span className="font-extrabold">Zahra Rostami</span></div>
+            <div className="w-full h-full flex flex-wrap justify-start items-center sm:py-10 py-6">
+                <div className="lg:text-5xl md:text-3xl sm:text-2xl text-2xl w-full my-5">
+                    <div className="w-full text-center sm:text-left">Hello I'm <span className="font-extrabold">Zahra Rostami</span></div>
                 </div>
-                <div className="font-xl">
+                <div className="lg:text-xl md:text-lg sm:text-base text-sm py-5">
                     <div>
-                        I'm Flora Sheen Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.
+                    I'm a <span className="font-extrabold">Frontend Developer</span> with expertise in React, Redux, and Tailwind CSS, along with experience in modern libraries and frameworks. My focus is on building scalable, efficient, and visually appealing web applications that prioritize performance and usability. Explore my portfolio to see the solutions I’ve delivered.
                     </div>
                 </div>
-                <div className="w-full">
+                <div className="w-full my-5">
                     <SocialBtn />
                 </div>
             </div>
