@@ -1,4 +1,5 @@
 import SocialBtn from "../components/SocialBtn";
+import { Link } from "react-router-dom";
 
 const HomeIntroduction = () => {
     return (
@@ -12,6 +13,7 @@ const HomeIntroduction = () => {
                     I'm a <span className="font-extrabold">Frontend Developer</span> with expertise in React, Redux, and Tailwind CSS, along with experience in modern libraries and frameworks. My focus is on building scalable, efficient, and visually appealing web applications that prioritize performance and usability. Explore my portfolio to see the solutions I’ve delivered.
                     </div>
                 </div>
+                <div className="w-full text-center text-xl font-semibold mx-auto"><Link to="/project" className="bg-yellow-400 py-3 rounded px-5">See My Projects</Link></div>
                 <div className="w-full my-5">
                     <SocialBtn />
                 </div>
