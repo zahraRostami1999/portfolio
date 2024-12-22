@@ -5,7 +5,6 @@ const NavBar = () => {
             <div className='flex justify-between'>
                 <ul className="flex justify-between list-none text-right mx-auto">
                     <li className='px-5 cursor-pointer'><Link to="/project">Projects</Link></li>
-                    <li className='px-5 cursor-pointer'><Link to="https://shop.zahra-rostami.ir/">store</Link></li>
                 </ul>
             </div>
         </>
