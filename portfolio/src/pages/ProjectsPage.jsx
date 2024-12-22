@@ -1,20 +1,24 @@
 import ProjectCard from "../components/ProjectCard";
 import { Projects } from "../data/projects";
-import { useState } from "react";
+import { useState, useMemo,useEffect } from "react";
 const ProjectsPage = () => {
     const [projectInfo, setProjectInfo] = useState([]);
     const filterBtn = ["All", "React", "Tailwind CSS", "Redux"];
     const [filter, setFilter] = useState("All");
 
-    // const handleFilterProducts = (newFilter) => {
-    //     setFilter(newFilter);
-    // };
+    useEffect(() => {
+        setProjectInfo(Projects);
+      }, []);
 
-    // const filteredProducts = useMemo(() => {
-    //     if (filter === "all") return projectInfo;
-    //     return projectInfo.filter((project) => project.technologies === filter);
-    // }, [projectInfo, filter]);
+    const handleFilterProducts = (newFilter) => {
+        setFilter(filter => newFilter);
+    };
 
+    const filteredProducts = useMemo(() => {
+        if (filter === "All") return projectInfo;
+        return projectInfo.filter(product => product.technologies.includes(filter));
+    }, [projectInfo, filter]);
+    
     return (
         <>
             <div className="w-full flex justify-center lg:py-14 md:py-14 sm:py-10 py-10">
@@ -26,7 +30,7 @@ const ProjectsPage = () => {
                         })}
                     </div>
                     <div className="">
-                        {Projects.map(project =>
+                        {filteredProducts.map(project =>
                             <ProjectCard key={project.id} project={project} />
                         )}
                     </div>
