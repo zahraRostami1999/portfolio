@@ -9,7 +9,7 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 const SingleProjectPage = () => {
     const { id } = useParams();
     const ProjectInfo = Projects.find(project => project.id == id);
-
+        
     return (
         <>
             <div className="w-full min-h-screen flex justify-center items-center flex-row text-neutral-800 ">
@@ -34,7 +34,7 @@ const SingleProjectPage = () => {
                     </div>
                 </div>
                 <div className="fixed top-20 left-10  bg-red-300 rounded-full px-3 py-2">
-                    <Link to="/"><FontAwesomeIcon icon={faArrowLeft} /></Link>
+                    <Link to="https://zahra-rostami.ir/project"><FontAwesomeIcon icon={faArrowLeft} /></Link>
                     
                 </div>
             </div>
