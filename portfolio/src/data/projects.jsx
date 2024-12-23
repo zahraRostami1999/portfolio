@@ -1,8 +1,16 @@
+import clockCover from "./images/clockCover.png";
+import clockImg from "./images/clock-img.png";
+import shopCover from "./images/shop-cover.png";
+import shopImg from "./images/shop-img.png";
+import todoCover from "./images/todoCover.png";
+import todoImg from "./images/todo-img.png";
+
 export const Projects = [
     {
       id: 1,
       title: "Digital Clock",
-      img: "../assets/shop-img.png",
+      cover: clockCover,
+      img: clockImg,
       description: "A responsive e-commerce platform built with React and Tailwind CSS.",
       date: "October 2024",
       technologies: ["React"],
@@ -12,7 +20,8 @@ export const Projects = [
     {
       id: 2,
       title: "ToDo List",
-      img: "../assets/shop-img.png",
+      cover: todoCover,
+      img: todoImg,
       description: "A responsive e-commerce platform built with React and Tailwind CSS.",
       date: "October 2024",
       technologies: ["React", "Tailwind CSS", "Responsive"],
@@ -22,7 +31,8 @@ export const Projects = [
     {
       id: 3,
       title: "Online Store",
-      img: "../assets/shop-img.png",
+      cover: shopCover,
+      img: shopImg,
       description: "A responsive e-commerce platform built with React and Tailwind CSS.",
       date: "December 2024",
       technologies: ["React", "Tailwind CSS", "Redux", "Responsive"],
