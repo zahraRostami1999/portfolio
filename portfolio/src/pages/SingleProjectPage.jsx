@@ -21,8 +21,8 @@ const SingleProjectPage = () => {
                     </div>
                     <div className="lg:w-1/4 md:w-1/4 sm:w-5/6 w-5/6 flex lg:flex-col md:flex-col sm:flex-row flex-row justify-between lg:text-xl md:text-base sm:text-sm text-sm">
                         <div className="flex flex-wrap lg:w-full md:w-full w-1/2 justify-around items-center border-2 border-black rounded lg:h-2/5 md:h-2/5 py-3 mr-2 md:mr-0 lg:mr-0">
-                            <button className="border-2 lg:w-2/3 md:w-2/3 w-11/12 lg:py-2 py-1 border-gray-700 font-bold mb-2 md:mb-0 lg:mb-0 rounded"><Link to="https://github.com/zahraRostami1999/shop-app">GitHub</Link></button>
-                            <button className="border-2 lg:w-2/3 md:w-2/3 w-11/12 lg:py-2 py-1 border-gray-700 font-bold  rounded"><Link to="https://shop.zahra-rostami.ir/">Demo</Link></button>
+                            <button className="border-2 lg:w-2/3 md:w-2/3 w-11/12 lg:py-2 py-1 border-gray-700 font-bold mb-2 md:mb-0 lg:mb-0 rounded"><Link to={ProjectInfo.githubLink}>GitHub</Link></button>
+                            <button className="border-2 lg:w-2/3 md:w-2/3 w-11/12 lg:py-2 py-1 border-gray-700 font-bold  rounded"><Link to={ProjectInfo.demoLink}>Demo</Link></button>
                         </div>
                         <div className="border-2 border-black lg:h-1/2 md:h-1/2 lg:w-full md:w-full w-1/2 flex justify-center items-center rounded font-semibold">
                             <ul>
