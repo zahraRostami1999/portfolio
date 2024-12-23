@@ -1,6 +1,4 @@
-import banner from "../assets/banner.png";
 import { Link } from "react-router-dom";
-import img from '../assets/shop-cover.png';
 
 const ProjectCard = (props) => {  
     const id = props.project.id;
@@ -9,7 +7,7 @@ const ProjectCard = (props) => {
             <div className="w-full border-b">
                 <div className="w-full flex flex-row justify-center py-10">
                     <div className="lg:w-1/2 w-5/6  flex justify-center md:w-2/3 sm:w-4/5">
-                        <img className="lg:w-2/3 md:w-4/5 sm:w-5/6 w-full " src={img} alt="project-image" />
+                        <img className="lg:w-2/5 md:w-4/5 sm:w-5/6 w-full " src={props.project.cover} alt="project-image" />
                     </div>
                     <div className="w-1/3 py-10 font-semibold flex justify-start items flex-col gap-3 text-sm sm:text-sm md:text-lg">
                         <h1>{props.project.id}</h1>
