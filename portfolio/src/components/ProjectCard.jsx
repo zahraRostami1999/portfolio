@@ -5,7 +5,7 @@ const ProjectCard = (props) => {
     return (
         <>
             <div className="w-full border-b">
-                <div className=" lg:w-3/5 md:w-3/5 sm:w-2/3 w-11/12 flex flex-row justify-center py-10 mx-auto">
+                <div className=" lg:w-3/5 md:w-3/5 sm:w-2/3 w-11/12 flex flex-row lg:justify-center md:justify-center sm:justify-between justify-between py-10 mx-auto">
                     <div className="w-1/2 flex justify-center">
                         <img className="lg:w-64 lg:h-60 md:w-44 md:h-40 sm:w-36 sm:h-32 w-36 h-32" src={props.project.cover} alt="project-image" />
                     </div>
