@@ -25,7 +25,7 @@ const SingleProjectPage = () => {
                             <button className="border-2 lg:w-2/3 md:w-2/3 w-11/12 lg:py-2 py-1 border-gray-700 font-bold mb-2 md:mb-0 lg:mb-0 rounded"><Link to={ProjectInfo.githubLink}>GitHub</Link></button>
                             <button className="border-2 lg:w-2/3 md:w-2/3 w-11/12 lg:py-2 py-1 border-red-300 bg-red-300 font-bold  rounded"><Link to={ProjectInfo.demoLink}>Live View</Link></button>
                         </div>
-                        <div className="border-2 border-black lg:h-1/2 md:h-1/2 lg:w-full md:w-full w-1/2 flex justify-center items-start rounded font-semibold">
+                        <div className="border-2 border-black lg:h-1/2 md:h-1/2 lg:w-full md:w-full w-1/2 flex justify-center lg:items-start md:items-start sm:items-center items-center  rounded font-semibold">
                             <ul>
                                 {ProjectInfo.technologies.map(tech => (
                                     <li className="lg:my-5 md:my-5" key={tech}>{tech}</li>
