@@ -15,7 +15,7 @@ const SingleProjectPage = () => {
                     <div className="relative lg:w-2/3 sm:w-5/6 w-5/6 md:w-2/3 sm:5/6 border-2 border-black text-center lg:py-5 py-3 sm:py-5 lg:px-10 px-1 rounded my-5 md:my-0 lg:my-0">
                         <h1 className="font-bold lg:text-3xl md:text-2xl sm:text-xl text-lg  mb-3">{ProjectInfo.title}</h1>
                         <p className="lg:text-base md:text-base sm:text-sm text-xs">{ProjectInfo.description}</p>
-                        <img className="my-5" src={ProjectInfo.img} alt="" />
+                        <img className="my-5 rounded" src={ProjectInfo.img} alt="" />
                         <div className="absolute top-2 right-3 rounded-full lg:text-lg md:text-base sm:text-sm text-sm">
                             <Link to="https://zahra-rostami.ir/project"><FontAwesomeIcon icon={faXmark} /></Link>
                         </div>
