@@ -3,8 +3,8 @@ import { Projects } from "../data/projects";
 import { useState, useMemo,useEffect } from "react";
 const ProjectsPage = () => {
     const [projectInfo, setProjectInfo] = useState([]);
-    const filterBtn = ["All", "React", "Tailwind CSS", "Redux", "Responsive"];
-    const [filter, setFilter] = useState("All");
+    const filterBtn = ["All Projects", "React", "Tailwind CSS", "Redux", "Responsive"];
+    const [filter, setFilter] = useState("All Projects");
 
     useEffect(() => {
         setProjectInfo(Projects);
@@ -15,13 +15,13 @@ const ProjectsPage = () => {
     };
 
     const filteredProducts = useMemo(() => {
-        if (filter === "All") return projectInfo;
+        if (filter === "All Projects") return projectInfo;
         return projectInfo.filter(product => product.technologies.includes(filter));
     }, [projectInfo, filter]);
     
     return (
         <>
-            <div className="w-full flex justify-center lg:py-3 md:py-14 sm:py-10 py-5 text-neutral-800">
+            <div className="w-full flex justify-center py-10 text-neutral-800">
                 <div className="w-11/12 flex justify-center flex-wrap ">
                     <div className="w-full text-center mb-5 lg:text-4xl md:text-2xl sm:text-xl text-base font-bold">My Projects</div>
                     <div className="w-full flex flex-row border-b justify-start text-xs lg:text-lg md:text-base font-Poppins font-medium">
