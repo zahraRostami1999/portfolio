@@ -14,7 +14,7 @@ const Header = () => {
                     </div>
                     <Link to="/">
                         <div>
-                            <FontAwesomeIcon className='text-red-300' icon={faHome} />
+                            <FontAwesomeIcon className='text-red-300 hover:text-yellow-300' icon={faHome} />
                         </div>
                     </Link>
                 </div>
