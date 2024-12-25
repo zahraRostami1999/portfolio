@@ -13,7 +13,7 @@ const HomeIntroduction = () => {
                     I'm a <span className="font-extrabold">Frontend Developer</span> who loves crafting awesome web experiences using React, Redux, and Tailwind CSS. I’m all about creating user-friendly, visually stunning, and high-performing web apps that make a difference. Check out my portfolio to see the cool stuff I’ve been working on!
                     </div>
                 </div>
-                <div className="w-full lg:text-xl md:text-base sm:text-base text-sm font-semibold lg:mx-auto mx-0 my-10 md:my-6"><Link to="/project" className="bg-yellow-400 py-3 rounded px-5">What I've Created</Link></div>
+                <div className="w-full lg:text-xl md:text-base sm:text-base text-sm font-semibold lg:mx-auto mx-0 my-10 md:my-6 "><Link to="/project" className="bg-red-400 text-white hover:bg-yellow-400 hover:text-black py-3 rounded px-5 drop-shadow-lg">What I've Created</Link></div>
                 <div className="w-full my-5 md:my-0">
                     <SocialBtn />
                 </div>
