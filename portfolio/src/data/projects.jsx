@@ -51,7 +51,7 @@ export const Projects = [
     img: shopImg,
     description: "ChicMarket is a dynamic e-commerce platform with a clean, modern design. It offers all essential features for an online store, including a product listing page, shopping cart, login functionality, and checkout. State management is handled efficiently with Redux, and it’s fully responsive for seamless browsing on any device. This project showcases advanced React concepts and demonstrates my ability to build scalable applications.",
     date: "December 2024",
-    technologies: ["React", "Tailwind CSS", "Redux", "Responsive", "Fake API", "FontAwesome", "Props","Event handling", "Axios", "Toast", "Local storage"],
+    technologies: ["React", "Tailwind CSS", "Redux", "TypeScript", "React Query","Responsive", "Fake API", "FontAwesome", "Props","Event handling", "Axios", "Toast", "Local storage"],
     demoLink: "https://shop.zahra-rostami.ir/",
     githubLink: "https://github.com/zahraRostami1999/shop-app",
     figmaLink: "https://www.figma.com/design/OYoopavzCuJzJDH8OfTkLt/Shop-app?node-id=0-1&m=dev&t=FCl3mGJFFj8asK99-1",
