@@ -1,11 +1,11 @@
 import ProjectCard from "../components/ProjectCard";
-import { Projects } from "../data/projects";
+import { Projects } from "../data/Projects";
 import { useState, useMemo, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 const ProjectsPage = () => {
     const [projectInfo, setProjectInfo] = useState([]);
-    const filterBtn = ["All Projects", "React", "Tailwind CSS", "Redux", "Responsive"];
+    const filterBtn = ["All Projects", "React", "Tailwind CSS","TypeScript" , "React Query", "Redux", "Responsive"];
     const [filter, setFilter] = useState("All Projects");
     const [burgerFilter, setBurgerFilter] = useState(false);
 
@@ -40,9 +40,9 @@ const ProjectsPage = () => {
                         <FontAwesomeIcon icon={faBars} onClick={handleBurgerFilter} />
                     </div>
                     <div className={`${burgerFilter ? "block" : "hidden"} w-full justify-start flex-wrap`}>
-                        <div className="w-1/4  border-l mt-3 text-xs">
+                        <div className="w-1/4  border-l mt-3 text-xs absolute top-24 bg-transparentBlack rounded text-white">
                             {filterBtn.map((btn) => {
-                                return <button className="px-2 lg:px-5 md:px-3 py-2 w-full hover:text-neutral-600 hover:border-l hover:border-neutral-900 transition-all duration-300" key={btn} onClick={() => handleFilterProducts(btn)}>{btn}</button>
+                                return <button className="px-2 lg:px-5 md:px-3 py-2 w-full hover:text-red-300 hover:border-l-2 hover:border-red-300 transition-all duration-300" key={btn} onClick={() => handleFilterProducts(btn)}>{btn}</button>
                             })}
                         </div>
 
