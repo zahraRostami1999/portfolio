@@ -15,13 +15,17 @@ export default {
           xl: "1rem",
         },
       },
+      colors: {
+        transparentBlack: "rgba(0, 0, 0, 0.78)"
+      }
     },
     screens: {
       sm: "450px",
       md: "768px",
       lg: "1024px",
       xl: "1280px",
-    }
+    },
+
   },
   plugins: [],
 }
