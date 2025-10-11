@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 
 const ProjectCard = (props) => {
-    const id = props.project.id;
+    const name = props.project.name;
+    
     return (
         <>
             <div className="w-full border-b">
@@ -13,7 +14,7 @@ const ProjectCard = (props) => {
                         <h3 className="font-bold lg:text-xl md:text-xl sm:text-base text-sm">{props.project.title}</h3>
                         <h2 className="lg:text-sm md:text-sm sm:text-xs text-xs">{props.project.date}</h2>
                         <div className="w-full">
-                            <Link to={`/project/${id}`}>
+                            <Link to={`/project/${name}`}>
                                 <p className="hover:bg-green-600 hover:text-yellow-300 text-center bg-green-400 hover:font-bold rounded lg:w-1/2 md:w-2/3 sm:w-5/6 w-5/6 px-5 py-2 lg:my-5 md:my-5 sm:my-3 my-3 sm:text-xs text-xs md:text-sm lg:text-sm lg:font-semibold md:font-semibold">
                                     Details
                                 </p>
