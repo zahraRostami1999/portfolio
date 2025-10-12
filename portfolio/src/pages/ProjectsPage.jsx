@@ -28,12 +28,12 @@ const ProjectsPage = () => {
 
     return (
         <>
-            <div className="w-full flex justify-center py-10 text-neutral-800">
+            <div className="w-full flex justify-center py-10 text-neutral-700">
                 <div className="w-11/12 flex justify-center flex-wrap ">
                     <div className="w-full text-center mb-5 lg:text-4xl md:text-2xl sm:text-xl text-base font-bold">My Projects</div>
                     <div className="sm:hidden hidden w-full lg:flex md:flex flex-row border-b justify-start text-xs lg:text-lg md:text-base font-Poppins font-medium">
                         {filterBtn.map((btn) => {
-                            return <button className="px-2 lg:px-5 md:px-3 py-2  hover:text-neutral-600 hover:border-b hover:border-neutral-900 transition-all duration-300" key={btn} onClick={() => handleFilterProducts(btn)}>{btn}</button>
+                            return <button className="px-2 lg:px-5 md:px-3 py-2 border-b hover:text-neutral-600 hover:border-b hover:border-neutral-700 transition-all duration-900 ease-in-out" key={btn} onClick={() => handleFilterProducts(btn)}>{btn}</button>
                         })}
                     </div>
                     <div className="sm:flex flex lg:hidden md:hidden justify-start w-full text-xl">
