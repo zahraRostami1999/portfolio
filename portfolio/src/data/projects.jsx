@@ -1,3 +1,4 @@
+import slugify from 'slugify';
 import clockCover from "./images/clockCover.png";
 import clockImg from "./images/clock-img.png";
 import shopCover from "./images/shop-cover.png";
@@ -7,11 +8,34 @@ import todoImg from "./images/todo-img.png";
 import weatherImg from "./images/weather-img.png";
 import weatherCover from "./images/weatherCover.png";
 
+const customSlugify = (text) =>
+  slugify(text, {
+    lower: true,
+    strict: true,
+    replacement: '-',
+    remove: /[%\$\#@\&\*\!\?]/g,
+  });
+
+class Project {
+  constructor({ id, title, cover, img, description, date, technologies, demoLink, githubLink, figmaLink }) {
+    this.id = id;
+    this.title = title;
+    this.name = customSlugify(title);
+    this.cover = cover;
+    this.img = img;
+    this.description = description;
+    this.date = date;
+    this.technologies = technologies;
+    this.demoLink = demoLink;
+    this.githubLink = githubLink;
+    this.figmaLink = figmaLink;
+  }
+}
+
 export const Projects = [
-  {
+  new Project({
     id: 1,
     title: "Weather App",
-    name: "WeatherApp",
     cover: weatherCover,
     img: weatherImg,
     description: "A simple yet functional weather application that allows users to search for any city and view its current temperature along with an icon representing the weather condition. This project helped me explore how to work with APIs and dynamic data in React. It’s a perfect example of combining utility with a clean design.",
@@ -20,11 +44,10 @@ export const Projects = [
     demoLink: "https://weather.zahra-rostami.ir/",
     githubLink: "https://github.com/zahraRostami1999/weather-app",
     figmaLink: "",
-  },
-  {
+  }),
+  new Project({
     id: 2,
     title: "Clock & Stopwatch",
-    name: "ClockStopwatch",
     cover: clockCover,
     img: clockImg,
     description: "A sleek digital clock and stopwatch app that reflects my learning journey in React. The digital clock displays the current time, while the stopwatch lets you start, pause, and reset the timer with ease. It’s a minimalist project with a focus on core React principles like state and reusable components.",
@@ -33,11 +56,10 @@ export const Projects = [
     demoLink: "https://clock.zahra-rostami.ir/",
     githubLink: "https://github.com/zahraRostami1999/digital-clock-app",
     figmaLink: "",
-  },
-  {
+  }),
+  new Project({
     id: 3,
     title: "To-Do List",
-    name: "TodoList",
     cover: todoCover,
     img: todoImg,
     description: "A modern and responsive to-do list application designed to make task management fun and productive. Tasks can be added, marked as completed, deleted, or prioritized, and all data is stored persistently using local storage. This to-do list isn’t just functional; it’s stylish and fully responsive, making it a perfect tool for daily use.",
@@ -46,11 +68,10 @@ export const Projects = [
     demoLink: "https://todo.zahra-rostami.ir/",
     githubLink: "https://github.com/zahraRostami1999/TodoReact.git",
     figmaLink: "",
-  },
-  {
+  }),
+  new Project({
     id: 4,
     title: "Online Store",
-    name: "OnlineStore",
     cover: shopCover,
     img: shopImg,
     description: "ChicMarket is a dynamic e-commerce platform with a clean, modern design. It offers all essential features for an online store, including a product listing page, shopping cart, login functionality, and checkout. State management is handled efficiently with Redux, and it’s fully responsive for seamless browsing on any device. This project showcases advanced React concepts and demonstrates my ability to build scalable applications.",
@@ -59,5 +80,5 @@ export const Projects = [
     demoLink: "https://shop.zahra-rostami.ir/",
     githubLink: "https://github.com/zahraRostami1999/shop-app",
     figmaLink: "https://www.figma.com/design/OYoopavzCuJzJDH8OfTkLt/Shop-app?node-id=0-1&m=dev&t=FCl3mGJFFj8asK99-1",
-  },
+  }),
 ];
