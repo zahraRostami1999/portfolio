@@ -45,7 +45,6 @@ const ProjectsPage = () => {
                                 return <button className="px-2 lg:px-5 md:px-3 py-2 w-full hover:text-red-300 hover:border-l-2 hover:border-red-300 transition-all duration-300" key={btn} onClick={() => handleFilterProducts(btn)}>{btn}</button>
                             })}
                         </div>
-
                     </div>
                     <div className="w-full">
                         {filteredProducts.map(project =>

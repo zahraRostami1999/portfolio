@@ -21,7 +21,7 @@ const SingleProjectPage = () => {
                     </ul>
                     <div className="my-5 rounded image-container">
                         {!imageLoaded && (
-                            <div className={`w-[600px] h-[220px] rounded animate-pulse`} />
+                            <div className={`lg:w-[600px] w-[370px] lg:h-[100px] md:h-[185px] sm:[210px] h-[115px] rounded animate-pulse`} />
                         )}
                         <img
                             className="w-full h-full object-cover rounded"
