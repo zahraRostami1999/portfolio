@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
     return (
         <>
-            <div className="flex fixed justify-between items-center text-black py-3 px-4 md:px-20 lg:px-8 w-full drop-shadow-md">
+            <div className="flex fixed justify-between items-center text-black py-3 px-4 md:px-10 lg:px-8 w-full drop-shadow-md">
                 <div className="lg:text-3xl md:text-2xl sm:text-2xl text-xl w-full flex justify-between items-center">
                     <div>
                         <FontAwesomeIcon className='text-neutral-300 text-2xl' icon={faCloud} />

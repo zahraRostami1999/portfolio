@@ -1,12 +1,13 @@
 import { Projects } from "../data/projects";
 import { Link, useParams } from 'react-router-dom';
+import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 const SingleProjectPage = () => {
+    const [imageLoaded, setImageLoaded] = useState(false);
     const { name } = useParams();
-    
-    const ProjectInfo = Projects.find(project => project.name === name);    
+    const ProjectInfo = Projects.find(project => project.name === name);
 
     return (
         <div className="w-full min-h-screen flex justify-center items-center text-neutral-800 lg:py-20 md:py-10 sm:py-5 py-5">
@@ -19,12 +20,17 @@ const SingleProjectPage = () => {
                         ))}
                     </ul>
                     <div className="my-5 rounded image-container">
+                        {!imageLoaded && (
+                            <div className={`w-[600px] h-[220px] rounded animate-pulse`} />
+                        )}
                         <img
                             className="w-full h-full object-cover rounded"
                             src={ProjectInfo.img}
                             alt={ProjectInfo.title}
-                            width="600" 
-                            height="220" 
+                            onLoad={() => setImageLoaded(true)}
+                            width="600"
+                            height="220"
+                            style={{ display: imageLoaded ? "block" : "none" }}
                         />
                     </div>
                     <div className="absolute top-2 right-3 rounded-full lg:text-lg md:text-base sm:text-sm text-sm">
