@@ -1,4 +1,4 @@
-import banner from "../assets/banner.png";
+import banner from "../assets/banner.webp";
 import { useState } from "react";
 import HomeIntroduction from "../components/HomeIntroduction";
 
@@ -14,7 +14,7 @@ const HomePage = () => {
                         </div>
                         <div className="lg:w-2/5 md:w-2/5 sm:w-4/5 w-4/5 flex justify-center items-center md:items-start md:py-20">
                             {!imgLoaded && (
-                                <div className={`w-2/3 lg:h-[350px] md:h-[420px] sm:[h-300px] h-[200px] rounded animate-pulse`} />
+                                <div className={`w-2/3 lg:h-[400px] md:h-[350px] sm:[h-370px] h-[200px] rounded animate-pulse`} />
                             )}
                             <img className="w-2/3 mx-auto lg:h-[400px] md:h-[350px] sm:[h-370px]"
                                 src={banner}

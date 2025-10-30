@@ -24,7 +24,7 @@ const ProjectCard = (props) => {
                         <h2 className="lg:text-sm md:text-sm sm:text-xs text-xs text-neutral-600">{props.project.date}</h2>
                         <div className="w-full">
                             <Link to={`/project/${name}`}>
-                                <p className="hover:bg-red-300 text-center text-neutral-800 bg-red-200 hover:font-bold rounded lg:w-1/2 md:w-2/3 sm:w-5/6 w-5/6 px-5 py-2 lg:my-5 md:my-5 sm:my-3 my-3 sm:text-xs text-xs md:text-sm lg:text-sm lg:font-semibold md:font-semibold">
+                                <p className="flex justify-center items-center hover:bg-red-300 text-center text-neutral-800 bg-red-200 hover:font-bold rounded lg:w-1/2 md:w-2/3 sm:w-5/6 w-5/6 px-5 py-2 lg:my-5 md:my-5 sm:my-3 my-3 sm:text-xs text-xs md:text-sm lg:text-sm lg:font-semibold md:font-semibold transition-all duration-300">
                                     Details
                                 </p>
                             </Link>

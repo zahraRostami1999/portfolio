@@ -1,5 +1,5 @@
 import ProjectCard from "../components/ProjectCard";
-import { Projects } from "../data/projects";
+import { Projects } from "../data/Projects";
 import { useState, useMemo, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';

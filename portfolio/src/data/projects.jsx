@@ -1,12 +1,12 @@
 import slugify from 'slugify';
-import clockCover from "./images/clockCover.png";
-import clockImg from "./images/clock-img.png";
-import shopCover from "./images/shop-cover.png";
-import shopImg from "./images/shop-img.png";
-import todoCover from "./images/todoCover.png";
-import todoImg from "./images/todo-img.png";
-import weatherImg from "./images/weather-img.png";
-import weatherCover from "./images/weatherCover.png";
+import clockCover from "./images/clockCover.webp";
+import clockImg from "./images/clock-img.webp";
+import shopCover from "./images/shop-cover.webp";
+import shopImg from "./images/shop-img.webp";
+import todoCover from "./images/todoCover.webp";
+import todoImg from "./images/todo-img.webp";
+import weatherImg from "./images/weather-img.webp";
+import weatherCover from "./images/weatherCover.webp";
 
 const customSlugify = (text) =>
   slugify(text, {
