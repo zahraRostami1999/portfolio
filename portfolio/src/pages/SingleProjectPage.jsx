@@ -1,4 +1,4 @@
-import { Projects } from "../data/Projects";
+import { Projects } from "../data/Projects.jsx";
 import { Link, useParams } from 'react-router-dom';
 import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
